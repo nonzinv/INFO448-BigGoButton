@@ -8,10 +8,10 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="352dp"
-        android:layout_height="143dp"
+        android:layout_width="343dp"
+        android:layout_height="570dp"
         android:backgroundTint="#00FF00"
-        android:text="Push Me!"
+        android:text="@string/push_me"
         android:textColor="#FF0000"
         android:textSize="40dp"
         android:textStyle="italic"

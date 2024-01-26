@@ -3,6 +3,7 @@ package edu.uw.ischool.nonzinv.biggobutton
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import kotlin.random.Random
 
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             counter++
             countButton()
+            animateButton()
         }
     }
 
@@ -37,4 +39,9 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    // the animation were modified based on examples that can be found on StackExchange.
+    private fun animateButton() {
+        val shakeButton = AnimationUtils.loadAnimation(this, R.anim.shake)
+        button.startAnimation(shakeButton)
+    }
 }
